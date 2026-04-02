@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVG Fine Check UAE – Traffic Fines & Accident History Guide 2026</title>
+<meta name="description" content="Complete guide to checking EVG traffic fines and vehicle accident history in UAE. Learn how to use EVG Fine Check and EVG Accident History tools online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #d32f2f;
+  --red-soft: #fff5f5;
+  --red-border: #ffd0d0;
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --subtle: #888;
+  --bg: #ffffff;
+  --surface: #f7f7f7;
+  --border: #e8e8e8;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 13px 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.logo { background: var(--red); color: #fff; font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; }
+header .name { font-weight: 600; font-size: 15px; color: var(--text); }
+
+.hero {
+  background: linear-gradient(160deg, #fff 55%, #fff8f8 100%);
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.hero-tag {
+  display: inline-block;
+  background: var(--red-soft);
+  color: var(--red);
+  border: 1px solid var(--red-border);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.1rem;
+}
+.hero h1 em { font-style: normal; color: var(--red); }
+.hero p { color: var(--muted); font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+
+.container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+
+.section { padding: 3rem 0; border-bottom: 1px solid var(--border); }
+.section:last-of-type { border-bottom: none; }
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.section h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.prose p {
+  color: var(--muted);
+  font-size: 0.97rem;
+  margin-bottom: 1rem;
+}
+
+.prose p a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+.prose p a:hover { opacity: 0.72; }
+
+.highlight {
+  background: var(--red-soft);
+  border: 1px solid var(--red-border);
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+  padding: 1rem 1.3rem;
+  margin: 1.4rem 0;
+  font-size: 0.93rem;
+  color: #7a2020;
+  line-height: 1.65;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+}
+.card-icon { font-size: 20px; margin-bottom: 0.5rem; }
+.card h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; }
+.card p { font-size: 0.82rem; color: var(--subtle); margin: 0; line-height: 1.55; }
+
+.steps { list-style: none; margin-top: 1.2rem; counter-reset: step; }
+.steps li {
+  counter-increment: step;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.steps li::before {
+  content: counter(step);
+  background: var(--red);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--subtle);
+}
+footer a { color: var(--red); text-decoration: none; font-weight: 500; }
+footer a:hover { text-decoration: underline; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero { animation: fadeUp 0.5s ease both; }
+.section { animation: fadeUp 0.5s ease both 0.08s; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">EVG</div>
+  <span class="name">EVG Fine Check UAE</span>
+</header>
+
+<div class="hero">
+  <div class="hero-tag">UAE Vehicle Services 2026</div>
+  <h1>Check Your <em>Traffic Fines</em><br>&amp; Accident History in UAE</h1>
+  <p>A complete resource for UAE residents to check EVG traffic fines, pay challans, and verify vehicle accident records — all online, no queue needed.</p>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <div class="section-label">Traffic Fines</div>
+    <h2>What is EVG Fine Check?</h2>
+    <div class="prose">
+      <p>Emirates Vehicle Gate (EVG) is the UAE's official platform that consolidates traffic fines from all seven emirates in one place. Whether you have a speeding violation on Sheikh Zayed Road, a parking fine in Abu Dhabi, or a Salik toll issue in Dubai — everything is accessible through a single portal.</p>
+      <p>The <a href="https://evgfinescheck.com" target="_blank" rel="noopener">evg fine check</a> service allows UAE vehicle owners to instantly view outstanding fines using their plate number, Emirates ID, or Traffic Code Number (TCN) from their Mulkiya — no registration required for basic lookups.</p>
+      <div class="highlight">⚠️ Unpaid EVG fines attract a <strong>50% late penalty</strong> automatically. No warning is sent — the charge is added as soon as the grace period passes.</div>
+      <p>EVG connects with RTA Dubai, Abu Dhabi Police, Sharjah Police and other traffic authorities across the UAE, giving you a unified view of all violations across emirates in real time.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="card-icon">🚦</div><h3>RTA Dubai Fines</h3><p>Speeding, red light, lane violations on Dubai roads.</p></div>
+      <div class="card"><div class="card-icon">🏛️</div><h3>Abu Dhabi Police</h3><p>All Abu Dhabi traffic violations in one place.</p></div>
+      <div class="card"><div class="card-icon">🛣️</div><h3>Salik Tolls</h3><p>Track unpaid Salik toll charges across Dubai gates.</p></div>
+      <div class="card"><div class="card-icon">⚫</div><h3>Black Points</h3><p>Monitor demerit points linked to your driving licence.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Step by Step</div>
+    <h2>How to Check EVG Fines Online</h2>
+    <div class="prose">
+      <p>Checking your EVG traffic fines takes less than two minutes. Follow these steps or refer to the full guide on <a href="https://evgfinescheck.com" target="_blank" rel="noopener">evg fine check</a>:</p>
+    </div>
+    <ol class="steps">
+      <li>Visit <strong>evg.ae</strong> or open the EVG mobile app on your phone.</li>
+      <li>Log in with your <strong>UAE Pass</strong> or Emirates ID credentials.</li>
+      <li>Enter your <strong>plate number</strong>, Traffic Code Number (TCN), or Emirates ID.</li>
+      <li>View all active fines — amounts, violation locations, black points, and photos.</li>
+      <li>Pay securely using credit/debit card, Apple Pay, or bank transfer.</li>
+      <li>Download your <strong>PDF receipt</strong> or receive SMS confirmation.</li>
+    </ol>
+    <div class="highlight">💡 You can also SMS your plate number to <strong>2220</strong> from any UAE mobile line to get an instant fine summary — no internet needed.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Vehicle History</div>
+    <h2>EVG Accident History Check</h2>
+    <div class="prose">
+      <p>Before buying a used car in the UAE, it is essential to verify its past. The <a href="https://evgfinescheck.com/evg-accident-check/" target="_blank" rel="noopener">evg accident history</a> service lets you check a vehicle's full accident and incident record using its chassis number.</p>
+      <p>This is especially important in the UAE's active used car market — Dubai, Abu Dhabi, and Sharjah all have high volumes of pre-owned vehicle transactions where undisclosed accidents can significantly affect a car's value and road safety.</p>
+      <p>The EVG accident check pulls official government records linked to the vehicle's registration, giving buyers and sellers transparent data for informed decisions.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="card-icon">🔍</div><h3>Pre-purchase Check</h3><p>Verify accident history before buying any used vehicle in UAE.</p></div>
+      <div class="card"><div class="card-icon">📋</div><h3>Insurance Claims</h3><p>Settle insurance claims faster with official accident records.</p></div>
+      <div class="card"><div class="card-icon">🚗</div><h3>Chassis Number Lookup</h3><p>Search by chassis number for a complete vehicle profile.</p></div>
+      <div class="card"><div class="card-icon">✅</div><h3>Transparent Data</h3><p>Official government-linked records — not third-party estimates.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Benefits</div>
+    <h2>Why Use EVG Services in UAE</h2>
+    <div class="prose">
+      <p>Managing vehicle fines and records in the UAE has never been simpler. The Emirates Vehicle Gate platform — accessible through the <a href="https://evgfinescheck.com" target="_blank" rel="noopener">evg fine check</a> portal — offers over 50 vehicle-related services for UAE residents and visitors.</p>
+      <p>From checking black points and Mulkiya renewal to full <a href="https://evgfinescheck.com/evg-accident-check/" target="_blank" rel="noopener">evg accident history</a> reports — everything is digital, secure, and available 24/7 without visiting any government office.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="card-icon">⏱️</div><h3>Saves Time</h3><p>No queues, no office visits — done in minutes on your phone.</p></div>
+      <div class="card"><div class="card-icon">🔒</div><h3>Secure</h3><p>UAE Pass encryption protects all your personal data.</p></div>
+      <div class="card"><div class="card-icon">🌐</div><h3>All Emirates</h3><p>Covers Dubai, Abu Dhabi, Sharjah, Ajman and all other emirates.</p></div>
+      <div class="card"><div class="card-icon">📱</div><h3>24/7 Access</h3><p>Check fines and history anytime from any device.</p></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Reference resource for <a href="https://evgfinescheck.com" target="_blank" rel="noopener">evgfinescheck.com</a> — UAE Traffic Fines &amp; Accident History Guide &nbsp;·&nbsp; 2026</p>
+</footer>
+
+</body>
+</html>
